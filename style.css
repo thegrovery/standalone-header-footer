@@ -18,7 +18,7 @@
 	--font-size-large: 2.5em;
 
 	/*Inherited Vars*/
-	--text-color: var(--custom-white);
+	--text-color: var(--custom-black);
 	--text-color-alt: var(--custom-black);
 	--accent-color: var(--custom-orange);
 	--background-color: var(--custom-blue);
