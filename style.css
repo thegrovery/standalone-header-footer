@@ -48,7 +48,8 @@
 		color: var(--text-color);
 		font-size: 1em;
 		line-height: 1.35;
-
+		padding: 0;
+		margin: 0;
 	}
 
 	a{
@@ -754,7 +755,13 @@
 	}
 
 
-
+#formSection{
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+.form-wrapper{
+	padding: 2rem;
+}
 
 /* ===================== */
 /* ===== Blog Pages ===== */

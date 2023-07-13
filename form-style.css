@@ -1,0 +1,108 @@
+:root{
+			/*Base Vars*/
+			--custom-white: #FFFFFF;
+			--custom-black: #000000;
+			--custom-transition: 0.15s ease-in-out;
+			--custom-spacing: 5px;
+			
+			/*Theme Vars*/
+			--form-background: rgba(0, 123, 152, 0.8);
+			--input-background: rgba(255,255,255,.15);
+			--input-color: var(--custom-white);
+			--accent-color: #FF9008;
+		}
+		
+		.hbspt-form{
+			/*background: var(--form-background);*/
+			font-size: 1em;
+			padding: 1em;
+			width: 100%;
+			max-width: 500px;
+			margin: auto;
+		}
+		.hbspt-form *{
+			box-sizing: border-box;
+		}
+		.hbspt-form form{
+			background-color: transparent;
+			border: none;
+		}
+		.hbspt-form .hs-form-field{
+			position: relative;
+		}
+		.hbspt-form .hs-form-field label{
+			color: var(--input-color) !important;
+			padding: var(--custom-spacing);
+			font-size: 1em;
+		}
+		.hbspt-form .hs-form-field input,
+		.hbspt-form .hs-form-field textarea{
+			width: 100% !important;
+			border: 3px solid #fff;
+			background: var(--input-background) !important;
+			margin-top: 0;
+			border-radius: 3px;
+			padding: 12px;
+			color: var(--input-color) !important;
+		}
+
+		.hbspt-form .input{
+			margin-right: 0 !important;
+			padding: var(--custom-spacing);
+		}
+
+		.hbspt-form .hs-error-msgs{
+			position: absolute;
+			top: -2em;
+			left: 50%;
+			transform: translate(-50%, 0);
+			width: calc(100% - 2em);
+			list-style: none;
+			padding: 10px;
+			background-color: var(--custom-white) !important;
+			text-align: center;
+			transition: var(--custom-transition);
+		}
+		.hbspt-form .hs-error-msgs label{
+			color: var(--custom-black) !important;
+			font-size: 0.75em;
+			line-height: 1;
+			display: inline-block;
+		}
+		.hbspt-form .hs-error-msgs::before{
+			content: '';
+			width: 0; 
+			height: 0; 
+			border-left: 1em solid transparent;
+			border-right: 1em solid transparent;
+			border-top: 1em solid var(--custom-white);
+			position: absolute;
+			bottom: -0.95em;
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
+		.hbspt-form .hs-error-msgs li{
+			margin: 0;
+		}
+		.hbspt-form .hs_submit {
+			padding: var(--custom-spacing);
+		}
+		.hbspt-form .hs-button{
+			overflow: hidden;
+			vertical-align: middle;
+			padding: 12px 30px 12px 30px;
+			text-transform: uppercase;
+			letter-spacing: .1rem;
+			font-weight: 500;
+			background-color: var(--accent-color) !important;
+			border: solid 2px var(--accent-color);
+			color: #fff!important;
+			border-radius: 1.65em;
+			position: relative;
+			display: inline-block;
+		}
+
+		.hbspt-form .submitted-message {
+			color: var(--custom-white);
+			text-align: center;
+		}
